@@ -31,7 +31,7 @@ section {
   display: flex;
   height: 330px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 footer {
@@ -39,7 +39,8 @@ footer {
   background-color: black;
   color: white;
   padding: 5% 15%;
-  display: flex; /* flex influisce su hr */
+  display: flex;
+  flex-direction: column; /* flex influisce su hr */
 }
 /***** /setting box container ******/
 
