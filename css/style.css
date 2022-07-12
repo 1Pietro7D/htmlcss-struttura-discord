@@ -12,9 +12,7 @@
 /***** /Generics *****/
 
 /***** setting box container ******/
-header {
-  background-color: rgb(255, 0, 0);
-}
+
 nav {
   display: flex;
   height: 100px;
@@ -29,12 +27,34 @@ aside {
   margin: auto;
   padding: 50px 0;
 }
+section {
+  height: 330px;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  height: 500px;
+  background-color: black;
+  color: white;
+}
 /***** /setting box container ******/
 
 /***** Content ******/
+.square {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(15, 17, 17);
+}
 
 /***** /Content ******/
 
 /***** Utilities *****/
+section:nth-of-type(2n + 1) {
+  background-color: rgba(130, 230, 160, 0.425);
+}
+header {
+  background-color: rgb(255, 0, 0);
+}
 
 /***** /Utilities *****/
