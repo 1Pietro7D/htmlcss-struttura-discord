@@ -1,0 +1,40 @@
+/***** Generics *****/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* /reset */
+
+/***** /Generics *****/
+
+/***** setting box container ******/
+header {
+  background-color: rgb(255, 0, 0);
+}
+nav {
+  display: flex;
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+aside {
+  color: white;
+  text-align: center;
+  width: 70vh;
+  margin: auto;
+  padding: 50px 0;
+}
+/***** /setting box container ******/
+
+/***** Content ******/
+
+/***** /Content ******/
+
+/***** Utilities *****/
+
+/***** /Utilities *****/
