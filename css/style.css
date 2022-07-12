@@ -9,6 +9,78 @@
 
 /* /reset */
 
+/***** /Generics *****/
+
+/***** setting box container ******/
+
+.flex,
+.container,
+main > section {
+  display: flex;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+
+nav,
+section,
+footer > .container {
+  padding: 30px 15%;
+  justify-content: space-between;
+}
+
+aside {
+  text-align: center;
+  width: 70vh;
+  margin: auto;
+  padding-bottom: 50px;
+}
+#just-chillin {
+  justify-content: center;
+}
+section {
+  gap: 10px;
+}
+
+/* footer setting */
+
+footer {
+  height: 500px;
+  background-color: black;
+}
+
+footer .column {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container {
+  flex-direction: row;
+  gap: 7%;
+}
+.grow {
+  flex-grow: 1;
+}
+.grow2 {
+  flex-grow: 1.5;
+}
+
+/* footer setting */
+
+/***** /setting box container ******/
+
+/***** Content ******/
+.box {
+  height: 300px;
+  flex-basis: calc((100vw - 30%) / 2 - 5px);
+  background-color: rgb(15, 17, 17);
+}
+
+/***** /Content ******/
+
+/***** Utilities *****/
+
+/* setting color and text */
+
 body {
   color: white;
 }
@@ -19,64 +91,28 @@ section:nth-of-type(2n + 1) {
 header {
   background-color: rgb(255, 0, 0);
 }
-nav a {
+a {
   text-decoration: none;
-  color: white; /* nonostante text-decoration:none non eredita color:white, bisogna specificare lo stesso al tag a */
+  color: white;
 }
 
-/***** /Generics *****/
-
-/***** setting box container ******/
-
-.flex,
-main > section,
-footer {
-  display: flex;
+ul {
+  list-style-type: none;
 }
-
-nav {
-  height: 100px;
-  justify-content: space-around;
-  align-items: center;
-}
-
-aside {
-  text-align: center;
-  width: 70vh;
-  margin: auto;
-  padding-bottom: 50px;
-}
-section {
-  height: 330px;
-  align-items: center;
-  justify-content: space-around;
-  gap: 2%;
-}
-
-footer {
-  height: 500px;
-  background-color: black;
-  padding: 5% 15%;
-  flex-direction: column; /* flex influisce su hr */
-}
-/***** /setting box container ******/
-
-/***** Content ******/
-.box {
-  height: 300px;
-  width: 300px;
-  background-color: rgb(15, 17, 17);
-}
-
-/***** /Content ******/
-
-/***** Utilities *****/
-
 h1 {
   padding: 30px 0;
 }
-footer > h3 {
+
+footer h3,
+footer h6 {
   color: hsl(227deg 58% 65%);
 }
+footer h6 {
+  font-size: 1em;
+}
+footer h3 {
+  font-size: 2em;
+}
+/* /setting color and text */
 
 /***** /Utilities *****/
